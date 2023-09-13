@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+           <!----> background-image: url(https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSyuHCGDUN6vGolF8KZPl-7PQN81qzk-bdCgukv8X8d-D45ii94Uxz3JfprlT9kW7bBO3qA2wt1wHyw-Eg);
+        }
+        input
+        {
+            font-style: oblique;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>TOPIC_FORM</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+               {{EDTO.as_p}}
+
+        <input type="submit" value="REGISTER">
+        </form>
+    </center>
+    
+</body>
+</html>
